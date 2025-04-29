@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu Yu Hakusho | Spirit Detective Saga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://wallpapers.com/images/hd/yuyu-hakusho-main-characters-bufkd0yv9x38295c.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .episode-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
+        }
+        
+        .title-font {
+            font-family: 'Oswald', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .blur-effect {
+            backdrop-filter: blur(10px);
+            background-color: rgba(15, 23, 42, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-television text-red-500 text-2xl"></i>
+            <span class="text-white font-bold text-xl">TvdeTubo</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-300 hover:text-white">Página inicial</a>
+            <a href="#" class="text-gray-300 hover:text-white">Series</a>
+            <a href="#" class="text-gray-300 hover:text-white">Filmes</a>
+            <a href="#" class="text-gray-300 hover:text-white">Musicas</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search text-gray-300 hover:text-white cursor-pointer"></i>
+            <i class="fas fa-bell text-gray-300 hover:text-white cursor-pointer"></i>
+            <div class="w-8 h-8 rounded-full bg-red-500"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center relative">
+        <div class="container mx-auto px-6 z-10">
+            <h1 class="title-font text-5xl md:text-7xl font-bold text-white mb-4">YU YU HAKUSHO</h1>
+            <div class="flex space-x-4 mb-6">
+                <span class="bg-red-500 text-white px-3 py-1 rounded text-sm">TV-14</span>
+                <span class="text-gray-300">1992 • 112 episódios • Ação, Sobrenatural</span>
+            </div>
+            <p class="text-gray-300 max-w-2xl mb-8 leading-relaxed">
+              Um adolescente delinquente morre salvando uma criança e ganha uma segunda chance na vida como detetive do submundo.
+A jornada de Yusuke Urameshi pelo mundo espiritual é repleta de ação, humor e batalhas inesquecíveis.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded flex items-center">
+                    <i class="fas fa-play mr-2"></i> Assista agora
+                </button>
+                <button class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded flex items-center">
+                    <i class="fas fa-plus mr-2"></i> Minha lista
+                </button>
+                <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8">
+        <!-- Trailer Section -->
+        <section class="mb-12">
+            <h2 class="title-font text-3xl font-bold mb-6 text-white">Official Trailer</h2>
+            <div class="aspect-w-16 aspect-h-9 w-full">
+                <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/nbI1azBBVKo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- About Section -->
+<section class="mb-12 blur-effect p-6 rounded-lg">
+    <h2 class="title-font text-3xl font-bold mb-6 text-white">Sobre a série</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Sinopse</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Yu Yu Hakusho acompanha Yusuke Urameshi, um delinquente de 14 anos que morre salvando uma criança de um acidente de carro.
+                Como sua morte foi inesperada, o Mundo Espiritual não estava preparado para sua chegada. Após passar por uma série de testes,
+                Yusuke é revivido e nomeado Detetive do Submundo. Junto com seus amigos Kuwabara, Kurama e Hiei,
+                Yusuke investiga casos sobrenaturais no Mundo Humano, acabando por se envolver em batalhas que ameaçam
+                a existência de todos os mundos.
+            </p>
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Personagens Principais</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://cdn.myanimelist.net/images/characters/3/130535.jpg" alt="Yusuke Urameshi" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-white">Yusuke Urameshi</p>
+                    <p class="text-gray-400 text-sm">Detetive Espiritual</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://cdn.myanimelist.net/images/characters/10/96678.jpg" alt="Kazuma Kuwabara" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-white">Kazuma Kuwabara</p>
+                    <p class="text-gray-400 text-sm">Médio Humano</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://cdn.myanimelist.net/images/characters/4/58629.jpg" alt="Kurama" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-white">Kurama</p>
+                    <p class="text-gray-400 text-sm">Demônio Raposa</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://cdn.myanimelist.net/images/characters/13/76077.jpg" alt="Hiei" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-white">Hiei</p>
+                    <p class="text-gray-400 text-sm">Demônio do Fogo</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Detalhes</h3>
+            <div class="space-y-4">
+                <div>
+                    <p class="text-gray-400">Estúdio:</p>
+                    <p class="text-white">Studio Pierrot</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Exibição Original:</p>
+                    <p class="text-white">10 de outubro de 1992 - 7 de janeiro de 1995</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Baseado em:</p>
+                    <p class="text-white">Mangá de Yoshihiro Togashi</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Episódios:</p>
+                    <p class="text-white">112 (4 temporadas)</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Avaliação:</p>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400 mr-2"></i>
+                        <span class="text-white">4.7/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção de Episódios -->
+<section class="mb-12">
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="title-font text-3xl font-bold text-white">Episódios</h2>
+        <div class="flex space-x-2">
+            <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-1 rounded text-sm">1ª temporada</button>
+            <button class="bg-gray-800 hover:bg-gray-700 text-gray-400 px-4 py-1 rounded text-sm">2ª temporada</button>
+            <button class="bg-gray-800 hover:bg-gray-700 text-gray-400 px-4 py-1 rounded text-sm">3ª temporada</button>
+            <button class="bg-gray-800 hover:bg-gray-700 text-gray-400 px-4 py-1 rounded text-sm">4ª temporada</button>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <!-- Episódio 1 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/xuOy8Ie_P2g" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 1: Surpreso por estar morto</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    Yusuke Urameshi, um delinquente de 14 anos, morre salvando uma criança de ser atropelada. 
+                    No além, ele conhece Botan, a guia espiritual, que o informa que sua morte foi inesperada.
+                </p>
+            </div>
+        </div>
+
+        <!-- Episódio 2 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/jZN6JwzLwYc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 2: Koenma aparece</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    Yusuke conhece Koenma, o filho do governante do mundo espiritual, que lhe oferece a chance de voltar à vida 
+                    completando uma série de testes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Episódio 3 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/HN8Xe4tDAU8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 3: Kuwabara: Uma promessa entre homens</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    O rival de Yusuke, Kazuma Kuwabara, consegue sentir o espírito de Yusuke e se recusa a acreditar que ele está morto, 
+                    levando a um confronto emocionante.
+                </p>
+            </div>
+        </div>
+
+        <!-- Episódio 4 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/tpBiUdT12SY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 4: Requisitos para os amantes</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    Yusuke deve ajudar sua mãe enlutada e sua antiga namorada a seguirem em frente com suas vidas 
+                    como parte de seu teste para voltar ao mundo dos vivos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Episódio 5 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/x9aAoP3SOqw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 5: Yusuke está de volta</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    Yusuke completa com sucesso seus testes e é revivido, retornando ao seu corpo a tempo 
+                    de impedir uma briga de gangues na escola.
+                </p>
+            </div>
+        </div>
+
+        <!-- Episódio 6 -->
+        <div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/imhoSIsdeIU" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold text-white">Episódio 6: Três monstros</h3>
+                    <span class="text-gray-400 text-sm">22 min</span>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    Yusuke inicia seu primeiro caso oficial como Detetive Espiritual, investigando três poderosos 
+                    demônios que roubaram artefatos valiosos do Mundo Espiritual.
+                </p>
+            </div>
+        </div>
+<!-- Episode 7 -->
+<div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-48" src="https://www.youtube.com/embed/eJSDd0xVN6I" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="p-4">
+        <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg font-semibold text-white">Episódio 7: Kurama e Hiei</h3>
+            <span class="text-gray-400 text-sm">22 min</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+            Yusuke enfrenta Kurama e Hiei, dois dos três demônios responsáveis pelo roubo dos artefatos do Mundo Espiritual, 
+            mas descobre que nem todos os demônios são malignos.
+        </p>
+    </div>
+</div>
+
+<!-- Episode 8 -->
+<div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-48" src="https://www.youtube.com/embed/TmPXAHkRiLw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="p-4">
+        <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg font-semibold text-white">Episódio 8: A Decisão de Kuwabara</h3>
+            <span class="text-gray-400 text-sm">22 min</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+            Kazuma Kuwabara enfrenta testes difíceis para provar seu valor e integridade, enquanto Yusuke percebe que 
+            Kuwabara pode se tornar um poderoso aliado.
+        </p>
+    </div>
+</div>
+
+<!-- Episode 9 -->
+<div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-48" src="https://www.youtube.com/embed/Z-9tYBNXSuk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="p-4">
+        <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg font-semibold text-white">Episódio 9: A Batalha Começa</h3>
+            <span class="text-gray-400 text-sm">22 min</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+            Yusuke é convocado para participar de um torneio de artes marciais no Mundo Humano, onde enfrentará adversários 
+            que também possuem habilidades espirituais.
+        </p>
+    </div>
+</div>
+
+<!-- Episode 10 -->
+<div class="episode-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-48" src="https://www.youtube.com/embed/W9IWjoha3b8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="p-4">
+        <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg font-semibold text-white">Episódio 10: A Prova de Fogo</h3>
+            <span class="text-gray-400 text-sm">22 min</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+            Durante o torneio, Yusuke enfrenta seu primeiro grande desafio em uma batalha onde precisa confiar 
+            em seus instintos e novos poderes espirituais para sobreviver.
+        </p>
+    </div>
+</div>
+
+</section>
+    <!-- More Like This Section -->
+<section class="mb-12">
+    <h2 class="title-font text-3xl font-bold mb-6 text-white">Séries relacionadas</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer">
+            <img src="https://cdn.myanimelist.net/images/anime/2/11744.jpg" alt="Excel Saga" class="w-full h-40 object-cover">
+            <div class="p-2">
+                <p class="text-white text-sm truncate">Excel Saga</p>
+            </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer">
+            <img src="https://cdn.myanimelist.net/images/anime/1172/92855.jpg" alt="Detonator Orgun" class="w-full h-40 object-cover">
+            <div class="p-2">
+                <p class="text-white text-sm truncate">Detonator Orgun</p>
+            </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer">
+            <img src="https://cdn.myanimelist.net/images/anime/1130/120002.jpg" alt="Trigun" class="w-full h-40 object-cover">
+            <div class="p-2">
+                <p class="text-white text-sm truncate">Trigun</p>
+            </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer">
+            <img src="https://cdn.myanimelist.net/images/anime/6/29992.jpg" alt="Street Fighter II" class="w-full h-40 object-cover">
+            <div class="p-2">
+                <p class="text-white text-sm truncate">Street Fighter II</p>
+            </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer">
+            <img src="https://cdn.myanimelist.net/images/anime/1440/92258.jpg" alt="Sailor Moon" class="w-full h-40 object-cover">
+            <div class="p-2">
+                <p class="text-white text-sm truncate">Sailor Moon</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-black py-8 px-6">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between mb-8">
+            <div class="mb-6 md:mb-0">
+                <div class="flex items-center space-x-4 mb-4">
+                    <i class="fas fa-television text-red-500 text-2xl"></i>
+                    <span class="text-white font-bold text-xl">TvdeTubo</span>
+                </div>
+                <div class="flex space-x-4">
+                    <i class="fab fa-facebook text-gray-400 hover:text-white cursor-pointer"></i>
+                    <i class="fab fa-twitter text-gray-400 hover:text-white cursor-pointer"></i>
+                    <i class="fab fa-instagram text-gray-400 hover:text-white cursor-pointer"></i>
+                    <i class="fab fa-youtube text-gray-400 hover:text-white cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Párina Inícial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Programas de TV</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Filmes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Músicas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Clássicos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Anos 70</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Anos 80</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Anos 90</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Anos 2000</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Preferências de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6">
+            <p class="text-gray-400 text-sm">© 2025 TvdeTubo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Simple script for demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to episode cards
+            const episodeCards = document.querySelectorAll('.episode-card');
+            
+            episodeCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+            
+            // Season selector functionality
+            const seasonButtons = document.querySelectorAll('button.bg-gray-800');
+            
+            seasonButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    seasonButtons.forEach(btn => {
+                        btn.classList.remove('bg-gray-700', 'hover:bg-gray-600', 'text-white');
+                        btn.classList.add('bg-gray-800', 'hover:bg-gray-700', 'text-gray-400');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.remove('bg-gray-800', 'hover:bg-gray-700', 'text-gray-400');
+                    this.classList.add('bg-gray-700', 'hover:bg-gray-600', 'text-white');
+                    
+                    // Here you would typically load the episodes for the selected season
+                    // For this demo, we'll just log to console
+                    console.log('Selected season:', this.textContent.trim());
+                });
+            });
+        });
+    </script>
+</body>
+</html>
